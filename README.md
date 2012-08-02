@@ -23,10 +23,15 @@ You can customize the configuration as you want, this works fine with me :)
 ### How to add this to your jenkins?
 
 Add an "Execute shell" build step with the following lines:
+
 git clone https://github.com/arturmartins/symfony2-jenkins-template.git sf2-jt
+
 cp -a sf2-jt/jenkins app/Resources
+
 cp -a sf2-jt/build.xml build.xml
+
 cp -a sf2-jt/phpunit.xml app/phpunit.xml
+
 rm -rf sf2-jt
 
  
